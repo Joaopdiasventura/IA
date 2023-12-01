@@ -2,11 +2,11 @@ import Express from "express";
 import OpenAI from "openai";
 
 const app = Express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
-const apiKey = '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';
+const apiKey = 'sk-kS6J4Dnxll9a8HcQhpqUT3BlbkFJB7R8WygbhnDLGY3VYPG';
 
-const openai = new OpenAI({ apiKey: apiKey });
+const openai = new OpenAI({ apiKey: `${apiKey}1` });
 
 async function main(conteudo) {
     try {
