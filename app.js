@@ -1,8 +1,11 @@
 import Express from "express";
 import OpenAI from "openai";
+import cors from "cors";
 
 const app = Express();
 const port = process.env.PORT || 3001;
+
+app.use(cors());
 
 const apiKey = 'sk-kS6J4Dnxll9a8HcQhpqUT3BlbkFJB7R8WygbhnDLGY3VYPG';
 
