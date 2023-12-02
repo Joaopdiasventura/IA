@@ -6,6 +6,7 @@ const app = Express();
 const port = process.env.PORT || 3001;
 
 app.use(cors());
+app.use(express.json());
 
 const apiKey = 'sk-kS6J4Dnxll9a8HcQhpqUT3BlbkFJB7R8WygbhnDLGY3VYPG';
 
